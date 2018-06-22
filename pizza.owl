@@ -1,0 +1,591 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://pizza.com/ontologies/pizza.owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://pizza.com/ontologies/pizza.owl">
+    <Prefix name="" IRI="http://pizza.com/ontologies/pizza.owl"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Ontology describing various pizzas pizzas based on their toppings. Modeled after example pizza ontology at http://mowl-power.cs.man.ac.uk/protegeowltutorial/resources/ProtegeOWLTutorialP4_v1_3.pdf</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="#SohoPizza"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TunaTopping"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CaperTopping"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasTopping"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ProbeInconsistentTopping"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AnchovyTopping"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ThinAndCrispyBase"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pizza"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AmericanHotPizza"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isIngredientOf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TomatoTopping"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MushroomTopping"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OnionTopping"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MozzarellaTopping"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OliveTopping"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ParmezanTopping"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NamedPizza"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PizzaBase"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isBaseOf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PepperTopping"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HamTopping"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SalamiTopping"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VegetableTopping"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isToppingOf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MargheritaPizza"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DeepPanBase"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PepperoniTopping"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AmericanPizza"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MeatTopping"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasBase"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CheeseTopping"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GreenPepperTopping"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PrawnTopping"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GarlicTopping"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PizzaTopping"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RedPepperTopping"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CheesyPizza"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SeafoodTopping"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VegetarianPizza"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#JalapenoPepperTopping"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SpicyBeefTopping"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasIngredient"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#CheesyPizza"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Pizza"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasTopping"/>
+                <Class IRI="#CheeseTopping"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#VegetarianPizza"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Pizza"/>
+            <ObjectAllValuesFrom>
+                <ObjectProperty IRI="#hasTopping"/>
+                <ObjectUnionOf>
+                    <Class IRI="#CheeseTopping"/>
+                    <Class IRI="#VegetableTopping"/>
+                </ObjectUnionOf>
+            </ObjectAllValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#AmericanHotPizza"/>
+        <Class IRI="#NamedPizza"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AmericanHotPizza"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTopping"/>
+            <Class IRI="#JalapenoPepperTopping"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AmericanHotPizza"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTopping"/>
+            <Class IRI="#MozzarellaTopping"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AmericanHotPizza"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTopping"/>
+            <Class IRI="#PepperoniTopping"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AmericanHotPizza"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTopping"/>
+            <Class IRI="#TomatoTopping"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AmericanHotPizza"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasTopping"/>
+            <ObjectUnionOf>
+                <Class IRI="#JalapenoPepperTopping"/>
+                <Class IRI="#MozzarellaTopping"/>
+                <Class IRI="#PepperoniTopping"/>
+                <Class IRI="#TomatoTopping"/>
+            </ObjectUnionOf>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AmericanPizza"/>
+        <Class IRI="#NamedPizza"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AmericanPizza"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTopping"/>
+            <Class IRI="#MozzarellaTopping"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AmericanPizza"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTopping"/>
+            <Class IRI="#PepperoniTopping"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AmericanPizza"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTopping"/>
+            <Class IRI="#TomatoTopping"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AmericanPizza"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasTopping"/>
+            <ObjectUnionOf>
+                <Class IRI="#MozzarellaTopping"/>
+                <Class IRI="#PepperoniTopping"/>
+                <Class IRI="#TomatoTopping"/>
+            </ObjectUnionOf>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AnchovyTopping"/>
+        <Class IRI="#SeafoodTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CaperTopping"/>
+        <Class IRI="#VegetableTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CheeseTopping"/>
+        <Class IRI="#PizzaTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DeepPanBase"/>
+        <Class IRI="#PizzaBase"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GarlicTopping"/>
+        <Class IRI="#VegetableTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GreenPepperTopping"/>
+        <Class IRI="#PepperTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HamTopping"/>
+        <Class IRI="#MeatTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#JalapenoPepperTopping"/>
+        <Class IRI="#PepperTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MargheritaPizza"/>
+        <Class IRI="#NamedPizza"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MargheritaPizza"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTopping"/>
+            <Class IRI="#MozzarellaTopping"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MargheritaPizza"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTopping"/>
+            <Class IRI="#TomatoTopping"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MargheritaPizza"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasTopping"/>
+            <ObjectUnionOf>
+                <Class IRI="#MozzarellaTopping"/>
+                <Class IRI="#TomatoTopping"/>
+            </ObjectUnionOf>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MeatTopping"/>
+        <Class IRI="#PizzaTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MozzarellaTopping"/>
+        <Class IRI="#CheeseTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MushroomTopping"/>
+        <Class IRI="#VegetableTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NamedPizza"/>
+        <Class IRI="#Pizza"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OliveTopping"/>
+        <Class IRI="#VegetableTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OnionTopping"/>
+        <Class IRI="#VegetableTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ParmezanTopping"/>
+        <Class IRI="#CheeseTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PepperTopping"/>
+        <Class IRI="#VegetableTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PepperoniTopping"/>
+        <Class IRI="#MeatTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pizza"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pizza"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasBase"/>
+            <Class IRI="#Pizza"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PrawnTopping"/>
+        <Class IRI="#SeafoodTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ProbeInconsistentTopping"/>
+        <Class IRI="#CheeseTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ProbeInconsistentTopping"/>
+        <Class IRI="#VegetableTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RedPepperTopping"/>
+        <Class IRI="#PepperTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SalamiTopping"/>
+        <Class IRI="#MeatTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SeafoodTopping"/>
+        <Class IRI="#PizzaTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SohoPizza"/>
+        <Class IRI="#NamedPizza"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SohoPizza"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTopping"/>
+            <Class IRI="#GarlicTopping"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SohoPizza"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTopping"/>
+            <Class IRI="#MozzarellaTopping"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SohoPizza"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTopping"/>
+            <Class IRI="#OliveTopping"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SohoPizza"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTopping"/>
+            <Class IRI="#ParmezanTopping"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SohoPizza"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTopping"/>
+            <Class IRI="#TomatoTopping"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SohoPizza"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasTopping"/>
+            <ObjectUnionOf>
+                <Class IRI="#GarlicTopping"/>
+                <Class IRI="#MozzarellaTopping"/>
+                <Class IRI="#OliveTopping"/>
+                <Class IRI="#ParmezanTopping"/>
+                <Class IRI="#TomatoTopping"/>
+            </ObjectUnionOf>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SpicyBeefTopping"/>
+        <Class IRI="#MeatTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ThinAndCrispyBase"/>
+        <Class IRI="#PizzaBase"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TomatoTopping"/>
+        <Class IRI="#VegetableTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TunaTopping"/>
+        <Class IRI="#SeafoodTopping"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VegetableTopping"/>
+        <Class IRI="#PizzaTopping"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#AmericanHotPizza"/>
+        <Class IRI="#AmericanPizza"/>
+        <Class IRI="#MargheritaPizza"/>
+        <Class IRI="#SohoPizza"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#AnchovyTopping"/>
+        <Class IRI="#PrawnTopping"/>
+        <Class IRI="#TunaTopping"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#CaperTopping"/>
+        <Class IRI="#MushroomTopping"/>
+        <Class IRI="#OliveTopping"/>
+        <Class IRI="#OnionTopping"/>
+        <Class IRI="#PepperTopping"/>
+        <Class IRI="#TomatoTopping"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#CheeseTopping"/>
+        <Class IRI="#MeatTopping"/>
+        <Class IRI="#SeafoodTopping"/>
+        <Class IRI="#VegetableTopping"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#DeepPanBase"/>
+        <Class IRI="#ThinAndCrispyBase"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#GreenPepperTopping"/>
+        <Class IRI="#JalapenoPepperTopping"/>
+        <Class IRI="#RedPepperTopping"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#HamTopping"/>
+        <Class IRI="#PepperoniTopping"/>
+        <Class IRI="#SalamiTopping"/>
+        <Class IRI="#SpicyBeefTopping"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#MozzarellaTopping"/>
+        <Class IRI="#ParmezanTopping"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Pizza"/>
+        <Class IRI="#PizzaBase"/>
+        <Class IRI="#PizzaTopping"/>
+    </DisjointClasses>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasBase"/>
+        <ObjectProperty IRI="#hasIngredient"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasIngredient"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasTopping"/>
+        <ObjectProperty IRI="#hasIngredient"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isBaseOf"/>
+        <ObjectProperty IRI="#isIngredientOf"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isIngredientOf"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isToppingOf"/>
+        <ObjectProperty IRI="#isIngredientOf"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasBase"/>
+        <ObjectProperty IRI="#isBaseOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasIngredient"/>
+        <ObjectProperty IRI="#isIngredientOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasTopping"/>
+        <ObjectProperty IRI="#isToppingOf"/>
+    </InverseObjectProperties>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hasBase"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#isBaseOf"/>
+    </FunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="#hasBase"/>
+    </InverseFunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="#isBaseOf"/>
+    </InverseFunctionalObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#hasIngredient"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#isIngredientOf"/>
+    </TransitiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#hasBase"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#hasTopping"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#isBaseOf"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#isToppingOf"/>
+    </IrreflexiveObjectProperty>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#AmericanHotPizza</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A pizza that only has Mozzarella, Tomato, Jalapeno, and Pepperoni toppings.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#AmericanPizza</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A pizza that only has Mozzarella, Tomato, and Pepperoni toppings.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#MargheritaPizza</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A pizza that only has Mozzarella and Tomato toppings.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#SohoPizza</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A pizza that only has Mozzarella, Tomato, Olive, and Parmezan toppings.</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
