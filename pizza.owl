@@ -59,6 +59,9 @@
         <Class IRI="#MozzarellaTopping"/>
     </Declaration>
     <Declaration>
+        <DataProperty IRI="#hasCalorificContentValue"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#OliveTopping"/>
     </Declaration>
     <Declaration>
@@ -72,6 +75,9 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#isBaseOf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InterestingPizza"/>
     </Declaration>
     <Declaration>
         <Class IRI="#PepperTopping"/>
@@ -89,6 +95,9 @@
         <ObjectProperty IRI="#isToppingOf"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#ExampleMargherita"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#MargheritaPizza"/>
     </Declaration>
     <Declaration>
@@ -99,6 +108,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#AmericanPizza"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FourCheesePizza"/>
     </Declaration>
     <Declaration>
         <Class IRI="#MeatTopping"/>
@@ -125,13 +137,13 @@
         <Class IRI="#RedPepperTopping"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#CheesyPizza"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#SeafoodTopping"/>
     </Declaration>
     <Declaration>
         <Class IRI="#VegetarianPizza"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CheesyPizza"/>
     </Declaration>
     <Declaration>
         <Class IRI="#JalapenoPepperTopping"/>
@@ -150,6 +162,15 @@
                 <ObjectProperty IRI="#hasTopping"/>
                 <Class IRI="#CheeseTopping"/>
             </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#InterestingPizza"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Pizza"/>
+            <ObjectMinCardinality cardinality="3">
+                <ObjectProperty IRI="#hasTopping"/>
+            </ObjectMinCardinality>
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
@@ -260,6 +281,17 @@
     <SubClassOf>
         <Class IRI="#DeepPanBase"/>
         <Class IRI="#PizzaBase"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FourCheesePizza"/>
+        <Class IRI="#Pizza"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FourCheesePizza"/>
+        <ObjectExactCardinality cardinality="4">
+            <ObjectProperty IRI="#hasTopping"/>
+            <Class IRI="#CheeseTopping"/>
+        </ObjectExactCardinality>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#GarlicTopping"/>
@@ -497,6 +529,15 @@
         <Class IRI="#PizzaBase"/>
         <Class IRI="#PizzaTopping"/>
     </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#MargheritaPizza"/>
+        <NamedIndividual IRI="#ExampleMargherita"/>
+    </ClassAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCalorificContentValue"/>
+        <NamedIndividual IRI="#ExampleMargherita"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">263</Literal>
+    </DataPropertyAssertion>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#hasBase"/>
         <ObjectProperty IRI="#hasIngredient"/>
