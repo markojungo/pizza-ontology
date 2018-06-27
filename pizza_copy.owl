@@ -21,22 +21,25 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.1</Literal>
     </Annotation>
     <Declaration>
-        <Class IRI="#CaperTopping"/>
+        <Class IRI="#TunaTopping"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#TunaTopping"/>
+        <Class IRI="#CaperTopping"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasTopping"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#ThinAndCrispyBase"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#SpicyPizza"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#ThinAndCrispyBase"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#CheesyVegetableTopping"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SpicinessValuePartition"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Hot"/>
@@ -60,19 +63,22 @@
         <Class IRI="#OliveTopping"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#PizzaBase"/>
+        <NamedIndividual IRI="#ExampleAmericanHot"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Spiciness"/>
+        <Class IRI="#PizzaBase"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasSpiciness"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#SalamiTopping"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#HamTopping"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#SalamiTopping"/>
+        <NamedIndividual IRI="#ExampleMargherita"/>
     </Declaration>
     <Declaration>
         <Class IRI="#VegetarianPizza2"/>
@@ -84,10 +90,10 @@
         <Class IRI="#HighCaloriePizza"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#DeepPanBase"/>
+        <NamedIndividual IRI="#France"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#France"/>
+        <Class IRI="#DeepPanBase"/>
     </Declaration>
     <Declaration>
         <Class IRI="#AmericanPizza"/>
@@ -99,16 +105,19 @@
         <Class IRI="#MeatTopping"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#FourCheesePizza"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#LowCaloriePizza"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UnclosedPizza"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Mild"/>
     </Declaration>
     <Declaration>
         <Class IRI="#PrawnTopping"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#UnclosedPizza"/>
     </Declaration>
     <Declaration>
         <Class IRI="#GorgonzolaTopping"/>
@@ -159,22 +168,22 @@
         <NamedIndividual IRI="#Germany"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#hasCountryOfOrigin"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#NamedPizza"/>
     </Declaration>
     <Declaration>
         <Class IRI="#ParmezanTopping"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#hasCountryOfOrigin"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="#isBaseOf"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#America"/>
+        <Class IRI="#InterestingPizza"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#InterestingPizza"/>
+        <NamedIndividual IRI="#America"/>
     </Declaration>
     <Declaration>
         <Class IRI="#PepperTopping"/>
@@ -207,10 +216,10 @@
         <Class IRI="#PizzaTopping"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#SpicyBeefTopping"/>
+        <Class IRI="#JalapenoPepperTopping"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#JalapenoPepperTopping"/>
+        <Class IRI="#SpicyBeefTopping"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#England"/>
@@ -234,6 +243,16 @@
             <NamedIndividual IRI="#Germany"/>
             <NamedIndividual IRI="#Italy"/>
         </ObjectOneOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#FourCheesePizza"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Pizza"/>
+            <ObjectExactCardinality cardinality="4">
+                <ObjectProperty IRI="#hasTopping"/>
+                <Class IRI="#CheeseTopping"/>
+            </ObjectExactCardinality>
+        </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
         <Class IRI="#HighCaloriePizza"/>
@@ -284,7 +303,7 @@
         </ObjectIntersectionOf>
     </EquivalentClasses>
     <EquivalentClasses>
-        <Class IRI="#Spiciness"/>
+        <Class IRI="#SpicinessValuePartition"/>
         <ObjectUnionOf>
             <Class IRI="#Hot"/>
             <Class IRI="#Medium"/>
@@ -490,7 +509,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Hot"/>
-        <Class IRI="#Spiciness"/>
+        <Class IRI="#SpicinessValuePartition"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#JalapenoPepperTopping"/>
@@ -537,11 +556,11 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Medium"/>
-        <Class IRI="#Spiciness"/>
+        <Class IRI="#SpicinessValuePartition"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Mild"/>
-        <Class IRI="#Spiciness"/>
+        <Class IRI="#SpicinessValuePartition"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#MozzarellaTopping"/>
@@ -607,7 +626,7 @@
         <Class IRI="#Pizza"/>
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="#hasBase"/>
-            <Class IRI="#Pizza"/>
+            <Class IRI="#PizzaBase"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -770,7 +789,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#UnclosedPizza"/>
-        <Class IRI="#Pizza"/>
+        <Class IRI="#NamedPizza"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#UnclosedPizza"/>
@@ -824,13 +843,13 @@
         <Class IRI="#SpicyBeefTopping"/>
     </DisjointClasses>
     <DisjointClasses>
-        <Class IRI="#MozzarellaTopping"/>
-        <Class IRI="#ParmezanTopping"/>
+        <Class IRI="#Hot"/>
+        <Class IRI="#Medium"/>
+        <Class IRI="#Mild"/>
     </DisjointClasses>
     <DisjointClasses>
-        <Class IRI="#NamedPizza"/>
-        <Class IRI="#SpicyPizza"/>
-        <Class IRI="#UnclosedPizza"/>
+        <Class IRI="#MozzarellaTopping"/>
+        <Class IRI="#ParmezanTopping"/>
     </DisjointClasses>
     <DisjointClasses>
         <Class IRI="#NonVegetarianPizza"/>
@@ -848,6 +867,14 @@
     <ClassAssertion>
         <Class IRI="#Country"/>
         <NamedIndividual IRI="#England"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AmericanHotPizza"/>
+        <NamedIndividual IRI="#ExampleAmericanHot"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MargheritaPizza"/>
+        <NamedIndividual IRI="#ExampleMargherita"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Country"/>
@@ -868,6 +895,16 @@
         <NamedIndividual IRI="#Germany"/>
         <NamedIndividual IRI="#Italy"/>
     </DifferentIndividuals>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCalorificContentValue"/>
+        <NamedIndividual IRI="#ExampleAmericanHot"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">763</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCalorificContentValue"/>
+        <NamedIndividual IRI="#ExampleMargherita"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">263</Literal>
+    </DataPropertyAssertion>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#hasBase"/>
         <ObjectProperty IRI="#hasIngredient"/>
@@ -906,6 +943,9 @@
     </InverseObjectProperties>
     <FunctionalObjectProperty>
         <ObjectProperty IRI="#hasBase"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hasSpiciness"/>
     </FunctionalObjectProperty>
     <FunctionalObjectProperty>
         <ObjectProperty IRI="#isBaseOf"/>
@@ -936,7 +976,7 @@
     </IrreflexiveObjectProperty>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasSpiciness"/>
-        <Class IRI="#Spiciness"/>
+        <Class IRI="#SpicinessValuePartition"/>
     </ObjectPropertyRange>
     <FunctionalDataProperty>
         <DataProperty IRI="#hasCalorificContentValue"/>
@@ -992,6 +1032,11 @@
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Country</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#FourCheesePizza</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">FourCheesePizza</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#HighCaloriePizza</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">An example of a datatype restriction.</Literal>
@@ -1019,7 +1064,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#InterestingPizza</IRI>
-        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Any Pizza with at least 3 PizzaToppings.</Literal>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Any Pizza with at least 3 hasTopping relationships.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -1108,12 +1153,17 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#Spiciness</IRI>
+        <IRI>#SpicinessValuePartition</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A ValuePartition that describes only spiciness values of Hot, Medium, or Mild.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#SpicinessValuePartition</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">An example of a covering axiom</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>#Spiciness</IRI>
+        <IRI>#SpicinessValuePartition</IRI>
         <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Spiciness</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
