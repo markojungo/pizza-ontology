@@ -1,0 +1,563 @@
+@prefix : <http://purl.obolibrary.org/MDO/breast_implant.owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://purl.obolibrary.org/MDO/breast_implant.owl> .
+
+<http://purl.obolibrary.org/MDO/breast_implant.owl> rdf:type owl:Ontology .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.obolibrary.org/MDO/breast_implant.owl#primaryDI
+:primaryDI rdf:type owl:AnnotationProperty ;
+           rdfs:label "DI"@en .
+
+
+###  http://purl.obolibrary.org/MDO/breast_implant.owl#productCode
+:productCode rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.obolibrary.org/MDO/breast_implant.owl#versionModelNumber
+:versionModelNumber rdf:type owl:AnnotationProperty ;
+                    rdfs:label "versionModelNumber"@en .
+
+
+###  http://www.w3.org/2004/02/skos/core#prefLabel
+<http://www.w3.org/2004/02/skos/core#prefLabel> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://purl.obolibrary.org/MDO/breast_implant.owl#has_breast_implant_feature
+:has_breast_implant_feature rdf:type owl:ObjectProperty ,
+                                     owl:TransitiveProperty .
+
+
+###  http://purl.obolibrary.org/MDO/breast_implant.owl#has_breast_implant_filling
+:has_breast_implant_filling rdf:type owl:ObjectProperty ;
+                            rdfs:subPropertyOf :has_breast_implant_feature ;
+                            rdf:type owl:FunctionalProperty ;
+                            rdfs:domain :Breast_implant_device ;
+                            rdfs:range :Breast_implant_filling .
+
+
+###  http://purl.obolibrary.org/MDO/breast_implant.owl#has_breast_implant_manufacturer
+:has_breast_implant_manufacturer rdf:type owl:ObjectProperty ;
+                                 owl:inverseOf :is_breast_implant_manufacturer_of ;
+                                 rdf:type owl:FunctionalProperty ,
+                                          owl:InverseFunctionalProperty ;
+                                 rdfs:domain :Breast_implant_device ;
+                                 rdfs:range :Breast_implant_manufacturer .
+
+
+###  http://purl.obolibrary.org/MDO/breast_implant.owl#has_breast_implant_profile
+:has_breast_implant_profile rdf:type owl:ObjectProperty ;
+                            rdfs:subPropertyOf :has_breast_implant_feature ;
+                            rdf:type owl:FunctionalProperty ;
+                            rdfs:domain :Breast_implant_device ;
+                            rdfs:range :Breast_implant_profile .
+
+
+###  http://purl.obolibrary.org/MDO/breast_implant.owl#has_breast_implant_shape
+:has_breast_implant_shape rdf:type owl:ObjectProperty ;
+                          rdfs:subPropertyOf :has_breast_implant_feature ;
+                          rdf:type owl:FunctionalProperty ;
+                          rdfs:domain :Breast_implant_device .
+
+
+###  http://purl.obolibrary.org/MDO/breast_implant.owl#has_breast_implant_shell
+:has_breast_implant_shell rdf:type owl:ObjectProperty ;
+                          rdfs:subPropertyOf :has_breast_implant_feature ;
+                          rdf:type owl:FunctionalProperty ;
+                          rdfs:domain :Breast_implant_device ;
+                          rdfs:range :Breast_implant_shell .
+
+
+###  http://purl.obolibrary.org/MDO/breast_implant.owl#has_breast_implant_shell_surface
+:has_breast_implant_shell_surface rdf:type owl:ObjectProperty ;
+                                  rdfs:subPropertyOf :has_breast_implant_feature ;
+                                  rdf:type owl:FunctionalProperty ;
+                                  rdfs:domain :Breast_implant_device ;
+                                  rdfs:range :Breast_implant_shell_surface .
+
+
+###  http://purl.obolibrary.org/MDO/breast_implant.owl#is_breast_implant_manufacturer_of
+:is_breast_implant_manufacturer_of rdf:type owl:ObjectProperty ,
+                                            owl:FunctionalProperty ,
+                                            owl:InverseFunctionalProperty ;
+                                   rdfs:domain :Breast_implant_manufacturer ;
+                                   rdfs:range :Breast_implant_device .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://purl.obolibrary.org/MDO/breast_implant.owl#has_fill_volume
+:has_fill_volume rdf:type owl:DatatypeProperty ;
+                 rdfs:subPropertyOf :has_value ;
+                 rdf:type owl:FunctionalProperty .
+
+
+###  http://purl.obolibrary.org/MDO/breast_implant.owl#has_height
+:has_height rdf:type owl:DatatypeProperty ;
+            rdfs:subPropertyOf :has_value ;
+            rdf:type owl:FunctionalProperty .
+
+
+###  http://purl.obolibrary.org/MDO/breast_implant.owl#has_projection
+:has_projection rdf:type owl:DatatypeProperty ;
+                rdfs:subPropertyOf :has_value ;
+                rdf:type owl:FunctionalProperty .
+
+
+###  http://purl.obolibrary.org/MDO/breast_implant.owl#has_value
+:has_value rdf:type owl:DatatypeProperty .
+
+
+###  http://purl.obolibrary.org/MDO/breast_implant.owl#has_width
+:has_width rdf:type owl:DatatypeProperty ;
+           rdfs:subPropertyOf :has_value ;
+           rdf:type owl:FunctionalProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://purl.obolibrary.org/MDO/breast_implant.owl#Allergan
+:Allergan rdf:type owl:Class ;
+          rdfs:subClassOf :Breast_implant_manufacturer .
+
+
+###  http://purl.obolibrary.org/MDO/breast_implant.owl#Anatomical_shape
+:Anatomical_shape rdf:type owl:Class ;
+                  rdfs:subClassOf :Non_round_shape .
+
+
+###  http://purl.obolibrary.org/MDO/breast_implant.owl#Arion
+:Arion rdf:type owl:Class ;
+       rdfs:subClassOf :Breast_implant_manufacturer .
+
+
+###  http://purl.obolibrary.org/MDO/breast_implant.owl#Breast_implant_brand
+:Breast_implant_brand rdf:type owl:Class ;
+                      rdfs:subClassOf :Material_entity .
+
+
+###  http://purl.obolibrary.org/MDO/breast_implant.owl#Breast_implant_device
+:Breast_implant_device rdf:type owl:Class ;
+                       rdfs:subClassOf :Material_entity ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty :has_breast_implant_filling ;
+                                         owl:someValuesFrom :Breast_implant_filling
+                                       ] ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty :has_breast_implant_manufacturer ;
+                                         owl:someValuesFrom :Breast_implant_manufacturer
+                                       ] ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty :has_breast_implant_profile ;
+                                         owl:someValuesFrom :Breast_implant_profile
+                                       ] ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty :has_breast_implant_shell ;
+                                         owl:someValuesFrom :Breast_implant_shell
+                                       ] ,
+                                       [ rdf:type owl:Restriction ;
+                                         owl:onProperty :has_breast_implant_shell_surface ;
+                                         owl:someValuesFrom :Breast_implant_shell_surface
+                                       ] .
+
+
+###  http://purl.obolibrary.org/MDO/breast_implant.owl#Breast_implant_filling
+:Breast_implant_filling rdf:type owl:Class ;
+                        rdfs:subClassOf :Material_entity .
+
+
+###  http://purl.obolibrary.org/MDO/breast_implant.owl#Breast_implant_manufacturer
+:Breast_implant_manufacturer rdf:type owl:Class ;
+                             rdfs:subClassOf :Material_entity .
+
+
+###  http://purl.obolibrary.org/MDO/breast_implant.owl#Breast_implant_profile
+:Breast_implant_profile rdf:type owl:Class ;
+                        rdfs:subClassOf :Quality ;
+                        owl:disjointWith :Breast_implant_shape .
+
+
+###  http://purl.obolibrary.org/MDO/breast_implant.owl#Breast_implant_shape
+:Breast_implant_shape rdf:type owl:Class ;
+                      rdfs:subClassOf :Quality .
+
+
+###  http://purl.obolibrary.org/MDO/breast_implant.owl#Breast_implant_shell
+:Breast_implant_shell rdf:type owl:Class ;
+                      rdfs:subClassOf :Material_entity .
+
+
+###  http://purl.obolibrary.org/MDO/breast_implant.owl#Breast_implant_shell_surface
+:Breast_implant_shell_surface rdf:type owl:Class ;
+                              owl:equivalentClass [ rdf:type owl:Class ;
+                                                    owl:unionOf ( :Smooth_shell_surface
+                                                                  :Textured_shell_surface
+                                                                )
+                                                  ] ;
+                              rdfs:subClassOf :Quality .
+
+
+###  http://purl.obolibrary.org/MDO/breast_implant.owl#Cohesive
+:Cohesive rdf:type owl:Class ;
+          rdfs:subClassOf :Inspira .
+
+
+###  http://purl.obolibrary.org/MDO/breast_implant.owl#Contour_shape
+:Contour_shape rdf:type owl:Class ;
+               rdfs:subClassOf :Non_round_shape .
+
+
+###  http://purl.obolibrary.org/MDO/breast_implant.owl#Country
+:Country rdf:type owl:Class ;
+         rdfs:subClassOf :Material_entity .
+
+
+###  http://purl.obolibrary.org/MDO/breast_implant.owl#Eurosilicone
+:Eurosilicone rdf:type owl:Class ;
+              rdfs:subClassOf :GC_Aesthetics .
+
+
+###  http://purl.obolibrary.org/MDO/breast_implant.owl#GC_Aesthetics
+:GC_Aesthetics rdf:type owl:Class ;
+               rdfs:subClassOf :Breast_implant_manufacturer .
+
+
+###  http://purl.obolibrary.org/MDO/breast_implant.owl#Groupe_Sebbin
+:Groupe_Sebbin rdf:type owl:Class ;
+               rdfs:subClassOf :Breast_implant_manufacturer .
+
+
+###  http://purl.obolibrary.org/MDO/breast_implant.owl#Hans_Biomed
+:Hans_Biomed rdf:type owl:Class ;
+             rdfs:subClassOf :Breast_implant_manufacturer .
+
+
+###  http://purl.obolibrary.org/MDO/breast_implant.owl#High_profile
+:High_profile rdf:type owl:Class ;
+              rdfs:subClassOf :Breast_implant_profile .
+
+
+###  http://purl.obolibrary.org/MDO/breast_implant.owl#Highly_Cohesive_Filling
+:Highly_Cohesive_Filling rdf:type owl:Class ;
+                         rdfs:subClassOf :Silicone_filling .
+
+
+###  http://purl.obolibrary.org/MDO/breast_implant.owl#Ideal_Implant
+:Ideal_Implant rdf:type owl:Class ;
+               rdfs:subClassOf :Breast_implant_manufacturer .
+
+
+###  http://purl.obolibrary.org/MDO/breast_implant.owl#Inspira
+:Inspira rdf:type owl:Class ;
+         rdfs:subClassOf :Natrelle .
+
+
+###  http://purl.obolibrary.org/MDO/breast_implant.owl#Low_profile
+:Low_profile rdf:type owl:Class ;
+             rdfs:subClassOf :Breast_implant_profile .
+
+
+###  http://purl.obolibrary.org/MDO/breast_implant.owl#Material_entity
+:Material_entity rdf:type owl:Class ;
+                 owl:disjointWith :Quality .
+
+
+###  http://purl.obolibrary.org/MDO/breast_implant.owl#MemoryGel
+:MemoryGel rdf:type owl:Class ;
+           rdfs:subClassOf :Breast_implant_brand .
+
+
+###  http://purl.obolibrary.org/MDO/breast_implant.owl#MemoryShape
+:MemoryShape rdf:type owl:Class ;
+             rdfs:subClassOf :Breast_implant_brand .
+
+
+###  http://purl.obolibrary.org/MDO/breast_implant.owl#Mentor
+:Mentor rdf:type owl:Class ;
+        rdfs:subClassOf :Breast_implant_manufacturer .
+
+
+###  http://purl.obolibrary.org/MDO/breast_implant.owl#Mentor_SILTEX_texture
+:Mentor_SILTEX_texture rdf:type owl:Class ;
+                       rdfs:subClassOf :Textured_shell_surface ;
+                       owl:disjointWith :Natrelle_BIOCELL_texture .
+
+
+###  http://purl.obolibrary.org/MDO/breast_implant.owl#Moderate_plus_profile
+:Moderate_plus_profile rdf:type owl:Class ;
+                       rdfs:subClassOf :Breast_implant_profile .
+
+
+###  http://purl.obolibrary.org/MDO/breast_implant.owl#Moderate_profile
+:Moderate_profile rdf:type owl:Class ;
+                  rdfs:subClassOf :Breast_implant_profile .
+
+
+###  http://purl.obolibrary.org/MDO/breast_implant.owl#Nagor
+:Nagor rdf:type owl:Class ;
+       rdfs:subClassOf :GC_Aesthetics .
+
+
+###  http://purl.obolibrary.org/MDO/breast_implant.owl#Natrelle
+:Natrelle rdf:type owl:Class ;
+          rdfs:subClassOf :Breast_implant_brand .
+
+
+###  http://purl.obolibrary.org/MDO/breast_implant.owl#Natrelle_BIOCELL_texture
+:Natrelle_BIOCELL_texture rdf:type owl:Class ;
+                          rdfs:subClassOf :Textured_shell_surface .
+
+
+###  http://purl.obolibrary.org/MDO/breast_implant.owl#Non_round_shape
+:Non_round_shape rdf:type owl:Class ;
+                 owl:equivalentClass [ owl:intersectionOf ( :Breast_implant_shape
+                                                            [ rdf:type owl:Restriction ;
+                                                              owl:onProperty :has_breast_implant_shape ;
+                                                              owl:someValuesFrom [ rdf:type owl:Class ;
+                                                                                   owl:complementOf :Round_shape
+                                                                                 ]
+                                                            ]
+                                                          ) ;
+                                       rdf:type owl:Class
+                                     ] ;
+                 owl:disjointWith :Round_shape .
+
+
+###  http://purl.obolibrary.org/MDO/breast_implant.owl#Polytech
+:Polytech rdf:type owl:Class ;
+          rdfs:subClassOf :Breast_implant_manufacturer .
+
+
+###  http://purl.obolibrary.org/MDO/breast_implant.owl#Quality
+:Quality rdf:type owl:Class .
+
+
+###  http://purl.obolibrary.org/MDO/breast_implant.owl#Round_shape
+:Round_shape rdf:type owl:Class ;
+             rdfs:subClassOf :Breast_implant_shape .
+
+
+###  http://purl.obolibrary.org/MDO/breast_implant.owl#SPECTRUM
+:SPECTRUM rdf:type owl:Class ;
+          rdfs:subClassOf :Breast_implant_brand .
+
+
+###  http://purl.obolibrary.org/MDO/breast_implant.owl#Saline_filled_breast_implant
+:Saline_filled_breast_implant rdf:type owl:Class ;
+                              owl:equivalentClass [ owl:intersectionOf ( :Breast_implant_device
+                                                                         [ rdf:type owl:Restriction ;
+                                                                           owl:onProperty :has_breast_implant_filling ;
+                                                                           owl:someValuesFrom :Saline_filling
+                                                                         ]
+                                                                       ) ;
+                                                    rdf:type owl:Class
+                                                  ] .
+
+
+###  http://purl.obolibrary.org/MDO/breast_implant.owl#Saline_filling
+:Saline_filling rdf:type owl:Class ;
+                rdfs:subClassOf :Breast_implant_filling ;
+                owl:disjointWith :Silicone_filling .
+
+
+###  http://purl.obolibrary.org/MDO/breast_implant.owl#Sientra
+:Sientra rdf:type owl:Class ;
+         rdfs:subClassOf :Breast_implant_manufacturer .
+
+
+###  http://purl.obolibrary.org/MDO/breast_implant.owl#Silicone_filled_breast_implant
+:Silicone_filled_breast_implant rdf:type owl:Class ;
+                                owl:equivalentClass [ owl:intersectionOf ( :Breast_implant_device
+                                                                           [ rdf:type owl:Restriction ;
+                                                                             owl:onProperty :has_breast_implant_filling ;
+                                                                             owl:someValuesFrom :Silicone_filling
+                                                                           ]
+                                                                         ) ;
+                                                      rdf:type owl:Class
+                                                    ] .
+
+
+###  http://purl.obolibrary.org/MDO/breast_implant.owl#Silicone_filling
+:Silicone_filling rdf:type owl:Class ;
+                  rdfs:subClassOf :Breast_implant_filling .
+
+
+###  http://purl.obolibrary.org/MDO/breast_implant.owl#Silicone_shell
+:Silicone_shell rdf:type owl:Class ;
+                rdfs:subClassOf :Breast_implant_shell .
+
+
+###  http://purl.obolibrary.org/MDO/breast_implant.owl#Smooth_shell_surface
+:Smooth_shell_surface rdf:type owl:Class ;
+                      rdfs:subClassOf :Breast_implant_shell_surface ;
+                      owl:disjointWith :Textured_shell_surface .
+
+
+###  http://purl.obolibrary.org/MDO/breast_implant.owl#SoftTouch
+:SoftTouch rdf:type owl:Class ;
+           rdfs:subClassOf :Inspira .
+
+
+###  http://purl.obolibrary.org/MDO/breast_implant.owl#Textured_shell_surface
+:Textured_shell_surface rdf:type owl:Class ;
+                        rdfs:subClassOf :Breast_implant_shell_surface .
+
+
+###  http://purl.obolibrary.org/MDO/breast_implant.owl#Wanhe_Plastic_Materials
+:Wanhe_Plastic_Materials rdf:type owl:Class ;
+                         rdfs:subClassOf :Breast_implant_manufacturer .
+
+
+###  http://purl.obolibrary.org/MDO/breast_implant.owl#410_Highly_Cohesive
+:_Highly_Cohesive rdf:type owl:Class ;
+                  rdfs:subClassOf :Natrelle .
+
+
+###  http://purl.obolibrary.org/MDO/breast_implant.owll#Extra_high_profile
+<http://purl.obolibrary.org/MDO/breast_implant.owll#Extra_high_profile> rdf:type owl:Class ;
+                                                                        rdfs:subClassOf :Breast_implant_profile .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://purl.obolibrary.org/MDO/breast_implant.owl#Allergan_Inc.
+<http://purl.obolibrary.org/MDO/breast_implant.owl#Allergan_Inc.> rdf:type owl:NamedIndividual ,
+                                                                           :Allergan .
+
+
+###  http://purl.obolibrary.org/MDO/breast_implant.owl#Arion_Breast_Implants
+:Arion_Breast_Implants rdf:type owl:NamedIndividual ,
+                                :Arion .
+
+
+###  http://purl.obolibrary.org/MDO/breast_implant.owl#Eurosilicone_Breast_Implants_Europe
+:Eurosilicone_Breast_Implants_Europe rdf:type owl:NamedIndividual ,
+                                              :Eurosilicone .
+
+
+###  http://purl.obolibrary.org/MDO/breast_implant.owl#Eurosilicone_S.A.S
+:Eurosilicone_S.A.S rdf:type owl:NamedIndividual ,
+                             :Eurosilicone .
+
+
+###  http://purl.obolibrary.org/MDO/breast_implant.owl#Ideal_Implant
+:Ideal_Implant rdf:type owl:NamedIndividual ,
+                        :Ideal_Implant .
+
+
+###  http://purl.obolibrary.org/MDO/breast_implant.owl#Mentor_Canada
+:Mentor_Canada rdf:type owl:NamedIndividual ,
+                        :Mentor .
+
+
+###  http://purl.obolibrary.org/MDO/breast_implant.owl#Mentor_Corp.
+<http://purl.obolibrary.org/MDO/breast_implant.owl#Mentor_Corp.> rdf:type owl:NamedIndividual ,
+                                                                          :Mentor .
+
+
+###  http://purl.obolibrary.org/MDO/breast_implant.owl#Mentor_Spain_and_Portugal
+:Mentor_Spain_and_Portugal rdf:type owl:NamedIndividual ,
+                                    :Mentor .
+
+
+###  http://purl.obolibrary.org/MDO/breast_implant.owl#Nagor
+:Nagor rdf:type owl:NamedIndividual ,
+                :Nagor .
+
+
+###  http://purl.obolibrary.org/MDO/breast_implant.owl#Natrelle_Breast_Implants_Canada
+:Natrelle_Breast_Implants_Canada rdf:type owl:NamedIndividual ,
+                                          :Allergan .
+
+
+###  http://purl.obolibrary.org/MDO/breast_implant.owl#Natrelle_Breast_Implants_Europe
+:Natrelle_Breast_Implants_Europe rdf:type owl:NamedIndividual ,
+                                          :Allergan .
+
+
+###  http://purl.obolibrary.org/MDO/breast_implant.owl#Polytech_Breast_Implants
+:Polytech_Breast_Implants rdf:type owl:NamedIndividual ,
+                                   :Polytech .
+
+
+###  http://purl.obolibrary.org/MDO/breast_implant.owl#Sebbin_Breast_Implants_Europe
+:Sebbin_Breast_Implants_Europe rdf:type owl:NamedIndividual ,
+                                        :Groupe_Sebbin .
+
+
+###  http://purl.obolibrary.org/MDO/breast_implant.owl#Sientra_Inc.
+<http://purl.obolibrary.org/MDO/breast_implant.owl#Sientra_Inc.> rdf:type owl:NamedIndividual ,
+                                                                          :Sientra .
+
+
+###  http://purl.obolibrary.org/MDO/breast_implant.owl#Wanhe_Plastics_China
+:Wanhe_Plastics_China rdf:type owl:NamedIndividual ,
+                               :Wanhe_Plastic_Materials .
+
+
+###  http://purl.obolibrary.org/MDO/breast_implant.owl#Mentor_France_&_Benelux
+:_Benelux rdf:type owl:NamedIndividual ,
+                   :Mentor .
+
+
+###  http://purl.obolibrary.org/MDO/breast_implant.owl#Mentor_Germany_Austria_&_Switzerland
+:_Switzerland rdf:type owl:NamedIndividual ,
+                       :Mentor .
+
+
+###  http://purl.obolibrary.org/MDO/breast_implant.owl#Mentor_United_Kingdom_&_Ireland
+:_Ireland rdf:type owl:NamedIndividual ,
+                   :Mentor .
+
+
+#################################################################
+#    Annotations
+#################################################################
+
+:OWLAnnotationPropertyImpl_928be7a4_a711_4f5c_88e4_927f34cecb5a rdfs:label "hasDI"@en .
+
+
+:OWLAnnotationPropertyImpl_ea9f99f5_b7d8_4680_92f2_fd973d8fbfcc rdfs:label "hasModelNumber"@en .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Breast_implant_device
+                :Breast_implant_filling
+                :Breast_implant_manufacturer
+                :Breast_implant_shell
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :High_profile
+                :Low_profile
+                :Moderate_plus_profile
+                :Moderate_profile
+                <http://purl.obolibrary.org/MDO/breast_implant.owll#Extra_high_profile>
+              )
+] .
+
+
+###  Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi
