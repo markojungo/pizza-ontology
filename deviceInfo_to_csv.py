@@ -1,6 +1,5 @@
 import xlrd
 import pandas
-import csv
 
 
 def main():
@@ -36,19 +35,14 @@ def main():
                                         "gmdnTerms",
                                         usecols=cols)
 
-    # print(type(device_sh_df[['PrimaryDI']]))
-    # print(type(deviceSizes_sh_df[['sizeText']]))
-    # print(type(productCodes_sh_df[['productCodes']]))
-    # print(type(deviceSizes_sh_df[['sizeText']]))
-
     joined_df = (device_sh_df[["PrimaryDI",
                               "brandName",
                               "versionModelNumber",
                               "companyName",
                               "deviceDescription"]]
                               .join(deviceSizes_sh_df[['sizeText']])
-                              .join(productCodes_sh_df[['productCodes']])
-                              .join(indentifiers_sh_df[['identifiers']])
+                              .join(productCodes_sh_df[['productCode']])
+                              .join(indentifiers_sh_df[['deviceId']])
                               .join(gmdnTerms_sh_df[['gmdnPTName', 'gmdnPTDefinition']]))
 
     joined_df.to_csv("rel_cols.csv",
