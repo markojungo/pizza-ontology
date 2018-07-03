@@ -1,0 +1,1323 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://purl.obolibrary.org/MD/breast_implants_ontology.owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://purl.obolibrary.org/MD/breast_implants_ontology.owl">
+    <Prefix name="" IRI="http://purl.obolibrary.org/MD/breast_implants_ontology.owl"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#MDO:0000029"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MDO:0000025"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MDO:0000069"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MDO:0000037"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MDO:0000049"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MDO:0000005"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MDO:0000065"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MDO:0000033"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MDO:0000077"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MDO:0000001"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MDO:0000089"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#MDO:0000018"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MDO:0000057"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MDO:0000061"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MDO:0000073"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MDO:0000041"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MDO:0000053"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#MDO:0000011"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MDO:0000081"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#MDO:0000015"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="#MDO:0000084"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MDO:0000058"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MDO:0000026"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MDO:0000038"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MDO:0000006"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MDO:0000054"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MDO:0000022"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MDO:0000066"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MDO:0000034"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MDO:0000078"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MDO:0000002"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#MDO:0000019"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MDO:0000050"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MDO:0000074"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MDO:0000030"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MDO:0000042"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MDO:0000090"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MDO:0000070"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#MDO:0000012"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MDO:0000082"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#MDO:0000016"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="#MDO:0000083"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#MDO:0000008"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="#MDO:0000047"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MDO:0000007"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MDO:0000092"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MDO:0000003"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MDO:0000059"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MDO:0000027"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MDO:0000039"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MDO:0000087"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MDO:0000055"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MDO:0000023"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MDO:0000067"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MDO:0000035"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MDO:0000079"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MDO:0000051"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MDO:0000063"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MDO:0000031"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MDO:0000075"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="#MDO:0000086"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#MDO:0000013"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MDO:0000071"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#MDO:0000009"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="#MDO:0000046"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#MDO:0000021"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MDO:0000036"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MDO:0000091"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MDO:0000004"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MDO:0000048"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#MDO:0000017"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MDO:0000028"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MDO:0000076"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MDO:0000088"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MDO:0000056"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MDO:0000024"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MDO:0000068"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MDO:0000072"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MDO:0000040"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MDO:0000052"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MDO:0000064"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="#MDO:0000085"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#MDO:0000010"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MDO:0000080"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MDO:0000060"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#MDO:0000014"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#MDO:0000020"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#MDO:0000027"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#MDO:0000006"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#MDO:0000013"/>
+                <ObjectComplementOf>
+                    <Class IRI="#MDO:0000026"/>
+                </ObjectComplementOf>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#MDO:0000036"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#MDO:0000001"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#MDO:0000009"/>
+                <Class IRI="#MDO:0000034"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#MDO:0000037"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#MDO:0000001"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#MDO:0000009"/>
+                <Class IRI="#MDO:0000035"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#MDO:0000038"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#MDO:0000001"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#MDO:0000014"/>
+                <Class IRI="#MDO:0000022"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#MDO:0000039"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#MDO:0000001"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#MDO:0000014"/>
+                <Class IRI="#MDO:0000023"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#MDO:0000063"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#MDO:0000037"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#MDO:0000009"/>
+                <Class IRI="#MDO:0000042"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#MDO:0000082"/>
+        <ObjectOneOf>
+            <NamedIndividual IRI="#MDO:0000092"/>
+            <NamedIndividual IRI="#MDO:0000091"/>
+        </ObjectOneOf>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#MDO:0000022"/>
+        <Class IRI="#MDO:0000005"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MDO:0000023"/>
+        <Class IRI="#MDO:0000005"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MDO:0000024"/>
+        <Class IRI="#MDO:0000023"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MDO:0000024"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#MDO:0000015"/>
+            <Class IRI="#MDO:0000049"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MDO:0000025"/>
+        <Class IRI="#MDO:0000023"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MDO:0000025"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#MDO:0000015"/>
+            <Class IRI="#MDO:0000041"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MDO:0000026"/>
+        <Class IRI="#MDO:0000006"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MDO:0000028"/>
+        <Class IRI="#MDO:0000027"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MDO:0000028"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#MDO:0000015"/>
+            <Class IRI="#MDO:0000041"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MDO:0000029"/>
+        <Class IRI="#MDO:0000027"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MDO:0000029"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#MDO:0000015"/>
+            <Class IRI="#MDO:0000049"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MDO:0000030"/>
+        <Class IRI="#MDO:0000007"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MDO:0000031"/>
+        <Class IRI="#MDO:0000007"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MDO:0000033"/>
+        <Class IRI="#MDO:0000007"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MDO:0000034"/>
+        <Class IRI="#MDO:0000002"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MDO:0000035"/>
+        <Class IRI="#MDO:0000002"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MDO:0000040"/>
+        <Class IRI="#MDO:0000004"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MDO:0000041"/>
+        <Class IRI="#MDO:0000003"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MDO:0000042"/>
+        <Class IRI="#MDO:0000035"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MDO:0000048"/>
+        <Class IRI="#MDO:0000003"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MDO:0000049"/>
+        <Class IRI="#MDO:0000003"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MDO:0000050"/>
+        <Class IRI="#MDO:0000001"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MDO:0000051"/>
+        <Class IRI="#MDO:0000003"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MDO:0000052"/>
+        <Class IRI="#MDO:0000050"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MDO:0000052"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#MDO:0000009"/>
+            <Class IRI="#MDO:0000035"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MDO:0000052"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#MDO:0000015"/>
+            <Class IRI="#MDO:0000041"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MDO:0000053"/>
+        <Class IRI="#MDO:0000050"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MDO:0000053"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#MDO:0000009"/>
+            <Class IRI="#MDO:0000076"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MDO:0000053"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#MDO:0000015"/>
+            <Class IRI="#MDO:0000049"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MDO:0000054"/>
+        <Class IRI="#MDO:0000050"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MDO:0000054"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#MDO:0000009"/>
+            <Class IRI="#MDO:0000075"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MDO:0000054"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#MDO:0000015"/>
+            <Class IRI="#MDO:0000049"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MDO:0000055"/>
+        <Class IRI="#MDO:0000050"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MDO:0000055"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#MDO:0000009"/>
+            <Class IRI="#MDO:0000060"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MDO:0000055"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#MDO:0000015"/>
+            <Class IRI="#MDO:0000051"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MDO:0000056"/>
+        <Class IRI="#MDO:0000050"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MDO:0000056"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#MDO:0000009"/>
+            <Class IRI="#MDO:0000061"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MDO:0000056"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#MDO:0000015"/>
+            <Class IRI="#MDO:0000041"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MDO:0000057"/>
+        <Class IRI="#MDO:0000050"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MDO:0000057"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#MDO:0000009"/>
+            <Class IRI="#MDO:0000034"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MDO:0000057"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#MDO:0000015"/>
+            <Class IRI="#MDO:0000048"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MDO:0000058"/>
+        <Class IRI="#MDO:0000050"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MDO:0000058"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#MDO:0000009"/>
+            <Class IRI="#MDO:0000034"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MDO:0000058"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#MDO:0000015"/>
+            <Class IRI="#MDO:0000041"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MDO:0000059"/>
+        <Class IRI="#MDO:0000050"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MDO:0000059"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#MDO:0000009"/>
+            <Class IRI="#MDO:0000034"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MDO:0000059"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#MDO:0000015"/>
+            <Class IRI="#MDO:0000049"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MDO:0000060"/>
+        <Class IRI="#MDO:0000035"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MDO:0000061"/>
+        <Class IRI="#MDO:0000042"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MDO:0000064"/>
+        <Class IRI="#MDO:0000059"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MDO:0000065"/>
+        <Class IRI="#MDO:0000059"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MDO:0000066"/>
+        <Class IRI="#MDO:0000059"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MDO:0000067"/>
+        <Class IRI="#MDO:0000059"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MDO:0000068"/>
+        <Class IRI="#MDO:0000059"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MDO:0000069"/>
+        <Class IRI="#MDO:0000059"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MDO:0000070"/>
+        <Class IRI="#MDO:0000059"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MDO:0000071"/>
+        <Class IRI="#MDO:0000059"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MDO:0000072"/>
+        <Class IRI="#MDO:0000059"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MDO:0000073"/>
+        <Class IRI="#MDO:0000081"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MDO:0000074"/>
+        <Class IRI="#MDO:0000081"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MDO:0000075"/>
+        <Class IRI="#MDO:0000042"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MDO:0000075"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#MDO:0000015"/>
+            <Class IRI="#MDO:0000049"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MDO:0000076"/>
+        <Class IRI="#MDO:0000035"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MDO:0000076"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#MDO:0000015"/>
+            <Class IRI="#MDO:0000049"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MDO:0000077"/>
+        <Class IRI="#MDO:0000030"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MDO:0000078"/>
+        <Class IRI="#MDO:0000033"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MDO:0000079"/>
+        <Class IRI="#MDO:0000033"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MDO:0000080"/>
+        <Class IRI="#MDO:0000027"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MDO:0000080"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#MDO:0000015"/>
+            <Class IRI="#MDO:0000049"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MDO:0000081"/>
+        <Class IRI="#MDO:0000052"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MDO:0000087"/>
+        <Class IRI="#MDO:0000007"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MDO:0000088"/>
+        <Class IRI="#MDO:0000027"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MDO:0000088"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#MDO:0000015"/>
+            <Class IRI="#MDO:0000051"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MDO:0000089"/>
+        <Class IRI="#MDO:0000027"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MDO:0000089"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#MDO:0000015"/>
+            <Class IRI="#MDO:0000051"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MDO:0000090"/>
+        <Class IRI="#MDO:0000027"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MDO:0000090"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#MDO:0000015"/>
+            <Class IRI="#MDO:0000051"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#MDO:0000022"/>
+        <Class IRI="#MDO:0000023"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#MDO:0000026"/>
+        <Class IRI="#MDO:0000027"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#MDO:0000028"/>
+        <Class IRI="#MDO:0000029"/>
+        <Class IRI="#MDO:0000080"/>
+        <Class IRI="#MDO:0000088"/>
+        <Class IRI="#MDO:0000089"/>
+        <Class IRI="#MDO:0000090"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#MDO:0000030"/>
+        <Class IRI="#MDO:0000031"/>
+        <Class IRI="#MDO:0000033"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#MDO:0000034"/>
+        <Class IRI="#MDO:0000035"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#MDO:0000036"/>
+        <Class IRI="#MDO:0000037"/>
+        <Class IRI="#MDO:0000038"/>
+        <Class IRI="#MDO:0000039"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#MDO:0000052"/>
+        <Class IRI="#MDO:0000053"/>
+        <Class IRI="#MDO:0000054"/>
+        <Class IRI="#MDO:0000055"/>
+        <Class IRI="#MDO:0000056"/>
+        <Class IRI="#MDO:0000057"/>
+        <Class IRI="#MDO:0000058"/>
+        <Class IRI="#MDO:0000059"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#MDO:0000064"/>
+        <Class IRI="#MDO:0000065"/>
+        <Class IRI="#MDO:0000066"/>
+        <Class IRI="#MDO:0000067"/>
+        <Class IRI="#MDO:0000068"/>
+        <Class IRI="#MDO:0000069"/>
+        <Class IRI="#MDO:0000070"/>
+        <Class IRI="#MDO:0000071"/>
+        <Class IRI="#MDO:0000072"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#MDO:0000073"/>
+        <Class IRI="#MDO:0000074"/>
+        <Class IRI="#MDO:0000081"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#MDO:0000078"/>
+        <Class IRI="#MDO:0000079"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#MDO:0000082"/>
+        <NamedIndividual IRI="#MDO:0000091"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MDO:0000082"/>
+        <NamedIndividual IRI="#MDO:0000092"/>
+    </ClassAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#MDO:0000008"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#MDO:0000009"/>
+        <ObjectProperty IRI="#MDO:0000008"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#MDO:0000010"/>
+        <ObjectProperty IRI="#MDO:0000008"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#MDO:0000011"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#MDO:0000012"/>
+        <ObjectProperty IRI="#MDO:0000011"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#MDO:0000013"/>
+        <ObjectProperty IRI="#MDO:0000011"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#MDO:0000014"/>
+        <ObjectProperty IRI="#MDO:0000011"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#MDO:0000015"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#MDO:0000016"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#MDO:0000009"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#MDO:0000012"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#MDO:0000015"/>
+    </FunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="#MDO:0000015"/>
+    </InverseFunctionalObjectProperty>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#MDO:0000017"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#MDO:0000018"/>
+        <DataProperty IRI="#MDO:0000017"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#MDO:0000019"/>
+        <DataProperty IRI="#MDO:0000017"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#MDO:0000020"/>
+        <DataProperty IRI="#MDO:0000017"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#MDO:0000021"/>
+        <DataProperty IRI="#MDO:0000017"/>
+    </SubDataPropertyOf>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#MDO:0000018"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#MDO:0000019"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#MDO:0000020"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#MDO:0000021"/>
+    </FunctionalDataProperty>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MDO:0000001</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">breast implant device</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MDO:0000002</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">breast implant filling</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MDO:0000003</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">breast implant manufacturer</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MDO:0000004</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">breast implant shell</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MDO:0000005</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">breast implant shell surface</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MDO:0000006</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">breast implant shape</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MDO:0000007</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">breast implant profile</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MDO:0000008</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has part</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MDO:0000009</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has filling</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MDO:0000010</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has shell</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MDO:0000011</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has quality</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MDO:0000012</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has profile</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MDO:0000013</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has shape</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MDO:0000014</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has shell surface</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MDO:0000015</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has manufacturer</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MDO:0000016</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">is manufacturer of</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MDO:0000017</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has value</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MDO:0000018</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has total fill volume</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MDO:0000019</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has height</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MDO:0000020</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has width</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MDO:0000021</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">has projection</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MDO:0000022</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">smooth shell surface</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MDO:0000023</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">textured shell surface</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MDO:0000024</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">MENTOR SILTEX texture</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MDO:0000025</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">NATRELLE BIOCELL texture</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MDO:0000026</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">round shape</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MDO:0000027</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">non-round shape</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MDO:0000028</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">NATRELLE Anatomical shape</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MDO:0000029</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">MENTOR Contour Profile shape</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MDO:0000030</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">low profile</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MDO:0000031</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">moderate profile</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MDO:0000033</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">high profile</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MDO:0000034</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">saline filling</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MDO:0000035</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">silicone filling</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MDO:0000036</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">saline filled device</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MDO:0000037</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">silicone filled device</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MDO:0000038</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">smooth device</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MDO:0000039</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">textured device</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MDO:0000040</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">silicone shell</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MDO:0000041</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Allergan</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MDO:0000042</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">highly cohesive silicone filling</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MDO:0000046</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">altTerm</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MDO:0000047</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">catalogueNumber</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MDO:0000048</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Ideal Implant</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MDO:0000049</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Mentor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MDO:0000050</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">named device</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MDO:0000051</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Sientra</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MDO:0000052</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">NATRELLE Silicone-Filled device</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MDO:0000053</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">MENTOR MemoryGel Silicone-Filled device</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MDO:0000054</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">MENTOR MemoryShape Silicone-Filled device</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MDO:0000055</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">SIENTRA Silicone Gel device</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MDO:0000056</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">NATRELLE 410 Highly Cohesive Anatomically Shaped Silicone-Filled device</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MDO:0000057</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Ideal Saline-Filled device</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MDO:0000058</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Allergan Medical RTV Saline-Filled device</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MDO:0000059</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Mentor Saline-Filled and Spectrum device</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MDO:0000060</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Sientra Silicone Gel filling</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MDO:0000061</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">NATRELLE 410 Highly Cohesive filling</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MDO:0000063</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">highly cohesive silicone device</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MDO:0000064</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">MENTOR SILTEX Round SPECTRUM device</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MDO:0000065</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">MENTOR Smooth Round SPECTRUM device</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MDO:0000066</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">MENTOR SILTEX CONTOUR PROFILE High device</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MDO:0000067</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">MENTOR SILTEX CONTOUR PROFILE Moderate device</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MDO:0000068</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">MENTOR SILTEX Round Moderate Profile device</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MDO:0000069</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">MENTOR Smooth Round Moderate Plus Profile device</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MDO:0000070</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">MENTOR Smooth Round Moderate Profile device</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MDO:0000071</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">MENTOR Smooth Round High Profile device</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MDO:0000072</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">MENTOR SILTEX CONTOUR PROFILE SPECTRUM device</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MDO:0000073</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">NATRELLE Inspira SoftTouch device</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MDO:0000074</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">NATRELLE Inspira Cohesive device</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MDO:0000075</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">MENTOR MemoryShape filling</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MDO:0000076</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">MENTOR MemoryGel filling</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MDO:0000077</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">NATRELLE Low Plus</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MDO:0000078</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">NATRELLE Full</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MDO:0000079</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">NATRELLE Extra Full</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MDO:0000080</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">MENTOR teardrop shape</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MDO:0000081</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">NATRELLE Inspira device</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MDO:0000082</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">breast implant product code</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MDO:0000083</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">deviceID</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MDO:0000084</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">primaryDI</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MDO:0000085</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">productCode</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MDO:0000086</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">versionModelNumber</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MDO:0000087</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">moderate plus profile</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MDO:0000088</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">SIENTRA Classic Base shape</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MDO:0000089</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">SIENTRA Round Base shape</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MDO:0000090</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">SIENTRA Oval Base shape</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MDO:0000091</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">FWM</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MDO:0000092</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">FTR</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
