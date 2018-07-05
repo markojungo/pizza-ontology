@@ -1,53 +1,24 @@
-import xlrd
-import pandas
+import pandas as pd
+from functools import reduce
 
 
-def main():
-    # read device
-        # get primaryDI, brandName, versionModelNumber, companyName,
-        # deviceDescription
-    cols = [0, 5, 6, 8, 10]
-    device_sh_df = pandas.read_excel("deviceInfo.xlsx",
-                                     "device",
-                                     usecols=cols)
-    # read deviceSizes
-    # get sizeText
-    col = 4
-    deviceSizes_sh_df = pandas.read_excel("deviceInfo.xlsx",
-                                          "deviceSizes",
-                                          usecols=col)
-    # read productCodes
-    # get productCode
-    col = 1
-    productCodes_sh_df = pandas.read_excel("deviceInfo.xlsx",
-                                           "productCodes",
-                                           usecols=col)
-    # read identifiers
-    # get deviceID
-    col = 1
-    indentifiers_sh_df = pandas.read_excel("deviceInfo.xlsx",
-                                           "identifiers",
-                                           usecols=col)
-    # read gmdnTerms
-    # get gmdnPTName, gmdnPTDefinition?
-    cols = [1, 2]
-    gmdnTerms_sh_df = pandas.read_excel("deviceInfo.xlsx",
-                                        "gmdnTerms",
-                                        usecols=cols)
+sheets_dict = pd.read_excel("deviceInfo.xlsx", sheet_name=None)
+rel_cols = {}
 
-    joined_df = (device_sh_df[["PrimaryDI",
-                              "brandName",
-                              "versionModelNumber",
-                              "companyName",
-                              "deviceDescription"]]
-                              .join(deviceSizes_sh_df[['sizeText']])
-                              .join(productCodes_sh_df[['productCode']])
-                              .join(indentifiers_sh_df[['deviceId']])
-                              .join(gmdnTerms_sh_df[['gmdnPTName', 'gmdnPTDefinition']]))
+rel_cols["device"] = sheets_dict["device"][["PrimaryDI",
+                                            "brandName",
+                                            "versionModelNumber",
+                                            "catalogNumber",
+                                            "companyName",
+                                            "deviceDescription"]]
+rel_cols["device_sizes"] = sheets_dict["deviceSizes"][["PrimaryDI", "sizeText"]]
+rel_cols["product_codes"] = sheets_dict["productCodes"][["PrimaryDI", "productCode"]]
+rel_cols["identifiers"] = sheets_dict["identifiers"][["PrimaryDI", "deviceId"]]
+rel_cols["gmdn_terms"] = sheets_dict["gmdnTerms"][["PrimaryDI", "gmdnPTName", "gmdnPTDefinition"]]
 
-    joined_df.to_csv("rel_cols.csv",
-                     sep=",")
+dfs = []
+for key, value in rel_cols.items():
+    dfs.append(value)
 
-
-if __name__ == '__main__':
-    main()
+df_final = reduce(lambda left, right: pd.merge(left, right, on="PrimaryDI", how="outer"), dfs)
+df_final.to_csv(open("rel_cols.csv", "w"), sep=",", float_format="%.2f")
