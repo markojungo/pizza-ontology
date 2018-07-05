@@ -42,3 +42,5 @@ for pdi, vmn, cn in zip(sheet["PrimaryDI"], sheet["versionModelNumber"], sheet["
         style_col.append(format_sientra(vmn))
     else:
         raise ValueError(f"Improperly formatted column found at PrimaryDI: {pdi}")
+
+sheet.insert(loc=3, column="style", value=style_col)
