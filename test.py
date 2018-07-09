@@ -7,3 +7,4 @@ import os
 
 onto_path.append(os.getcwd())
 onto = get_ontology("http://pizza.com/ontologies/pizza_copy.owl").load()
+

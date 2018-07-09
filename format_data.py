@@ -25,18 +25,27 @@ def format_sientra(vmn):
 # FORMAT SIZE TEXT
 def format_mentor_st(dev_desc):
     st = re.search(r"\d{3,}[c]{2}", str(dev_desc)) # search pattern: "###cc" (at least three #s)
-    return st.group()[:3] + " " + st.group()[3:] if st else ""
+    if st:
+        return st.group()[:3] + " " + st.group()[3:]
+    else:
+        raise ValueError(f"MENTOR device - no size text: {dev_desc}")
 
 # def format_allergan_st(st):
 #     return st
 
 def format_ideal_st(size_text):
     st = re.search(r"\d{3,}\s[c]{2}", str(size_text)) # search pattern "### cc" (at least three #s)
-    return st.group() if st else ""
+    if st:
+        return st.group()
+    else:
+        raise ValueError(f"IDEAL device - no size text: {size_text}")
 
 def format_sientra_st(size_text):
     st = re.search(r"\d{3,}\s[c]{2}", str(size_text)) # search pattern "### cc" (at least three #s)
-    return st.group() if st else ""
+    if st:
+        return st.group()
+    else:
+        raise ValueError(f"SIENTRA device - no size text: {size_text}")
 
 # MAIN FUNCTION
 def formatted_data(df):
